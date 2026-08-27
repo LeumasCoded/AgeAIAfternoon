@@ -24,3 +24,21 @@ import plotly.express as px
 
 sales =  pd.read_csv("data/campus_cafe_sales.csv"); sales.head()
 ```
+
+## Code chuck behaviors
+
+```{python}
+#| echo: false
+
+print("this line was produced by Python when the document was rendered but the code was made to be hidden.")
+```
+
+
+```{python}
+#| include: false
+
+#Runs silently. nothing appears here, bit sales exist for every chunk below it. 
+sales = pd.read_csv("data/campus_cafe_sales.csv");sales.head()
+
+
+```
