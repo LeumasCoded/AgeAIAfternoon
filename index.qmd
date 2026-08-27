@@ -1,0 +1,26 @@
+---
+title: "My First Quarto Site"
+author: "Samuel Ifeadi"
+format: html
+---
+
+## Welcome
+
+This page was written in **Quarto** and published straight to Github.
+
+- It renders to a real web page.
+- The source is plain text so git tracks every change cleanly.
+
+
+```{python}
+print("Hello from a rendered code chunck")
+```
+
+## Load and Inspect
+
+```{python}
+import pandas as pd
+import plotly.express as px
+
+sales =  pd.read_csv("data/campus_cafe_sales.csv"); sales.head()
+```
